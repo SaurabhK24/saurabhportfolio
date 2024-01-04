@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = () => {
+  const s3Url = "https://sauravportbucket.s3.us-east-1.amazonaws.com/Saurabh_Khanal.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDT8N0CxWFSiDL4AJLjqk%2FEPy9wKk6Fq%2B1In47mS81v1wIhAJDjhxTP2c2r9u2GWLafaCWI1zPgmkijFht7iVqP1fFoKvsCCGwQARoMNzIxNzA1NjU0MDY5IgyCO8VmWyZlhAmRt%2BEq2AKkCdxCBhc6knv7VnQNDu8xHaDpPMAVFYoi0vmEyTQLCBpeUUL%2BN4vjJLWRHLakI4GYD9OzQtz31AUPfGqyiA3XxFww42OnkAOiYvr7fCcr61lYcT6tpJMV2XVitcQMfyzcY%2BCDVtJ6368DbfHNJ16fRSSkY%2FaLjg4E721tKaRSycbLGMConYRLMbTMGCFIyyFojjOdXExx7v63X7OEXiBWnKdLU9AQOTalV6mZWDuoNVpx5XM5UwPymkC2ljRz%2FVDK56csTJ3ZJnOD0IKQkVDbE24Rt6LU28SEJe6WUUbc5lV%2FAisSlXEQSLJ7aLuzQll08BKfiyCVOsoC%2BbZ%2Bb4KJQ01Gwh1o9RxFt6qpHBYnyIXqaSCUuOIFmPdjZnYj%2B1wR94iax%2BfBijytE3%2BqffdSSmyXBJdnJ5XKq1LWT%2BeGN%2BP0dfEIA7T2cEqeiav12sf04Hqi2LG1ADCEuNisBjqyAskN0qkxJcVdoN0P3F2S7lrmTdQWXznAkx%2B9mYAUitG7FENJSVaPykOz2cJCoeQg5lh2Cck09Igf3n5iASBFs28KsHT4euJ59KdVXrPKVg2PNCGcEn2Ols%2BphPDN5ES8G%2BPv4P%2F5M5TAc%2FPzd%2BkzwvwnUPQhrIOUzLhQjTJYpf0XpEIpPyCFDOg%2B4JjMm9uTZD1NzwfzRv2PpFDwebhH0DcUdEeicDDYnLg%2BF9eNHI8UD5JjnL2p1uGi4TPcyqCqcGKJsurSpaW91rjMCbzWnM7DGNY89PbB90GkL6iSeBcOMVLQfzDRARe0nVIN9qn12s6MHF%2F43yDkSeiHZBT1D%2BC7jHFwg1cDAEGdfarekB80wYxJNE5YdBGOXLSwxCuLJZQIb2juNIVy629L2BQ1tzYFjg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240104T030335Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIA2QCICK42VKK7P4FH%2F20240104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=247a286c898dad17750687f5b874a7508caabff5f54c90b005aa1a124700adef";
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -37,7 +39,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Hello, I'm Saurav. I am currently working as a junior full stack software engineer. I enjoy working in full stack web development and am interested in Machine Learning and Equity Markets.
+            I am a junior full stack software engineer. I enjoy building new things, working out, and watching movies.
           </p>
           <div>
             <Link
@@ -47,7 +49,8 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              href={s3Url}
+              download="Saurav_CV.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#ee0979] to-[#ff6a00] hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
@@ -64,7 +67,7 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/headshot.png"
+              src="/images/memojitwo.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
