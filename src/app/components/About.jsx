@@ -23,7 +23,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>George Mason University, Faifax VA</li>
+        <li>George Mason University, Fairfax VA</li>
       </ul>
     ),
   },
