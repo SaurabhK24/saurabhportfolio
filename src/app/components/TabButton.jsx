@@ -8,16 +8,17 @@ const variants = {
 
 const TabButton = ({ active, selectTab, children }) => {
   const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
+  const underlineColor = active ? "from-purple-500 to-pink-500" : "from-transparent to-transparent";
 
   return (
-    <button onClick={selectTab}>
+    <button onClick={selectTab} className="relative">
       <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
         {children}
       </p>
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-1 bg-primary-500 mt-2 mr-3"
+        className={`h-1 bg-gradient-to-r ${underlineColor} mt-2 absolute left-0 right-0 mr-3`}
       ></motion.div>
     </button>
   );
