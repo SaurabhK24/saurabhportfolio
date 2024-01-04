@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    #a855f7,
+    #ec4899,
+    #eab308
+  );
+  background-clip: text;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

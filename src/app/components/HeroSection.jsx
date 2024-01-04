@@ -44,14 +44,14 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 hover:bg-slate-200"
+              className="gradient-text px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 hover:bg-slate-200"
             >
               Hire Me
             </Link>
             <Link
               href={s3Url}
               download="Saurav_CV.pdf"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 hover:bg-slate-800 text-white mt-3"
+              className="gradient-text px-1 inline-block py-1 w-full sm:w-fit rounded-full hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
