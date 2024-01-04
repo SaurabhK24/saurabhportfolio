@@ -26,11 +26,11 @@ const HeroSection = () => {
               sequence={[
                 "Saurav",
                 1000,
-                "Full Stack SWE",
+                "a SWE",
                 1000,
-                "Equity/Derivative Trader",
+                "a Trader",
                 1000,
-                "Student of the Game",
+                "a Student",
                 1000,
               ]}
               wrapper="span"
@@ -39,7 +39,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I am a junior full stack software engineer. I enjoy building new things, working out, and watching movies.
+            I am currently a junior full stack software engineer. I enjoy building new things, working out, and watching movies.
           </p>
           <div>
             <Link
