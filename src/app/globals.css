@@ -60,80 +60,6 @@
   }
 }
 
-.team-members{
-  display: flex;
-  z-index: 4;
-}
-
-.member-card-container{
-  background-color: rgba(255, 255, 255, 0.048);
-  border: 1px solid rgba(255, 255, 255, 0.068);
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 30px;
-  margin: 10px 13px;
-  border-radius: 10px;
-  opacity: 0;
-  animation-name: fadeInUp;
-  animation-duration: 0.7s;
-  animation-fill-mode: forwards;
-}
-
-#nimay{
-  animation-delay: 0.2s;
-}
-
-#jaden{
-  animation-delay: 0.4s;
-}
-
-.member-card-container img{
-  width: 13vw;
-  height: 13vw;
-}
-
-.member-name{
-  /* text-transform: uppercase; */
-  font-family: 'Inter', sans-serif;
-  font-size: 1.5vw;
-  margin-bottom: 0;
-  font-weight: 400;
-}
-
-.member-major{
-  opacity: 0;
-  font-size: 0.8vw;
-  margin-bottom: 8vh;
-  font-weight: 100;
-}
-
-.member-role{
-  opacity: 50%;
-  font-size: 0.8vw;
-  margin-bottom: -5px;
-  font-weight: 100;
-}
-
-
-.member-socials{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.member-socials > a{
-  margin: 0 3px;
-  opacity: 50%;
-
-  transition: 0.3s;
-}
-
-.member-socials > a:hover{
-  opacity: 100%;
-}
-
 
 @keyframes fadeInUp {
   0% {
@@ -222,4 +148,20 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/* Add this to your styles or use a CSS-in-JS solution */
+.animate-gradient-bg {
+  background-image: linear-gradient(90deg, #ff8a65, #ff4081, #f06292, #e031ab);
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
