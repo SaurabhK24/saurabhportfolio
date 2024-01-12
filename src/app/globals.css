@@ -3,6 +3,114 @@
 @tailwind utilities;
 
 
+
+.alt-bg{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.team-page-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 4;
+  margin-bottom: -20vh;
+}
+
+#team-page-title{
+  margin-bottom: 10px;
+}
+
+.alt-subtitle{
+  color: white;
+  max-width: 40vw;
+  font-size: 1vw;
+  text-align: center;
+  z-index: 4;
+  opacity: 0;
+  margin-bottom: 10vh;
+
+  animation-name: fadeInUp-alt-subtitle;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp-alt-subtitle {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 50%;
+      transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .team-members{
+      flex-direction: column;
+  }
+
+  .member-card-container{
+      padding: 40px 30px;
+  }
+
+  .member-card-container img{
+      width: 60vw;
+      height: 60vw;
+  }
+
+  .member-name{
+      font-size: 5vw;
+      margin-top: 35px;
+  }
+
+  .member-role{
+      font-size: 3vw;
+  }
+
+  .member-major{
+      font-size: 2.5vw;
+      margin-bottom: 50px;
+  }
+
+  .member-socials > a{
+      line-height: 0;
+      padding: 10px;
+      border-radius: 10px;
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.091);
+      border: 1px solid rgba(255, 255, 255, 0.091);
+  }
+}
+
+
 .gradient-text {
   background: linear-gradient(
     to right,
@@ -40,4 +148,20 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/* Add this to your styles or use a CSS-in-JS solution */
+.animate-gradient-bg {
+  background-image: linear-gradient(90deg, #ff8a65, #ff4081, #f06292, #e031ab);
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }

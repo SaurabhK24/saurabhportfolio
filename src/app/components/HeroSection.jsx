@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = () => {
-  const s3Url = "https://sauravportfoliobucket.s3.us-east-1.amazonaws.com/saurabh_khanal_resume.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQD5SZRlAJ0U%2B3rLIliv%2B6uh7pfTSe5hi3l14BifCVcN4wIhAL1rXaIYedB4GfM2FEo8OnWx408gkjPlc066cgJx80BhKvsCCHoQARoMNzIxNzA1NjU0MDY5IgwyOzCh3v1zrDD0oWoq2AILRPQhr0I8rCV%2BnMXXmQxUbWaCdNSsHJWV6qKT%2FtXWguQnUGk2hvXWzqGD7C%2BriiVn7K%2BN0kN2zYaawCH8HhWle%2FgaVrLe%2Bwesn6fd%2BfHPvh8Z6FlnLbHr6kyVGcuoCFbXicP%2FYuhXu%2FYsUMO%2B2LXCyrWFes9%2FjykF7Jzyw6sThBXiYeVOXWVM6OmkfhyaFpLSyrnHlZPfWmUk%2F8%2BTeBtY0qlygn5e078U2TLWU%2FTBBLzj%2BhDNsPC6E%2BCnG9U8X7S4gFmWdrQDkB1tmmDGge4yKtMX2JiG%2FwDUM71ynyQT7RbJoU11b0YDd9HlFHt7HyAzjs6fc3NWWaWMh0KFnxyFpn64P%2BYd0DsP9txibiO6qAhADNu03HJRS6lLSg9GgHrApfZOX5jQhBJTmCDk%2FnNIIC6nJF8wJ8EMo2l6LsqM7uwSvxceekiUuQLuNI5gUpygbW6qF9yqjjCgy9usBjqyAof4bJa5BhIQ6nBacdlpQNu86Y1%2BlSsxtrmNJjkaH%2Bb3G%2B3384CWDhDNK7GKcL9qPNbaH7qesq%2F0e%2BeNZ9vsLr4n9ea2wyqBt%2F7wKbwwUr%2BkAFmMN6Ubpq47nQMr2kMU5ak3ICIpJDO%2FhR%2Fu%2FawQNq6mkuMCH86bdbs%2BTWsIsAN17e5jALsBmd0r5crVEFTHgLbyqrqbcoQ6C8vW8IXZIbIq7f%2BC0jhjsWhtyX9Xo0vzBp1sg0hj8FaknPJFptqP9uVWtsU9pddaecayf2K9huGQryzNwIXuj8CaNvNrBmsNtp00PdhQ1BCHOcIZjNy7OkaIUk9kwN0%2FGm5wuLzsxAmIoWFOR4SDH2epCzMYgxynwaf4gPgcTefnASQpYyxpSZyQBU822UjWw%2FVm8k%2By%2BmGi2A%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240104T210456Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIA2QCICK42RQK7Y2ED%2F20240104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=bfcb50420e0f3804995a520c2603a6db0dfec801e1ef519d878c72f421d5bb29";
+  const s3Url = "https://drive.google.com/file/d/1PGKTRyAl3Qg5XR6VaWOW33cByCI87pXh/view?usp=sharing";
 
   return (
     <section className="lg:py-16">
@@ -44,16 +44,17 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 hover:bg-slate-200 text-white font-medium animate-gradient"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 hover:bg-slate-200 text-white font-medium"
             >
               Hire Me
             </Link>
             <Link
               href={s3Url}
               download="Saurav_CV.pdf"
+              target="_blank"  
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 hover:bg-slate-800 text-white mt-3"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 font-medium">
+              <span className="block bg-[#121212] hover:bg-sla te-800 rounded-full px-5 py-2 font-medium ">
                 Download CV
               </span>
             </Link>
