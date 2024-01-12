@@ -10,7 +10,6 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-blueGray-900 mx-auto px-12 py-4">
       <HeroSection></HeroSection>
       <AboutSection></AboutSection>
-      <Contact></Contact>
       <Footer></Footer>
     </main>
   )
