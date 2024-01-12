@@ -23,7 +23,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>George Mason University, Faifax VA</li>
+        <li>B.S in Computer Science</li>
       </ul>
     ),
   },
@@ -32,7 +32,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
+        <li>AWS Solutions Architect Associate</li>
         <li>Google Professional Cloud Developer</li>
       </ul>
     ),
@@ -52,16 +52,49 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <div className="rounded-2xl border border-zinc-200 p-6 dark:border-zinc-700/40">
+        <h2 className="flex items-center justify-center text-sm mb-5 font-semibold text-zinc-900 dark:text-zinc-100">
+  
+  <span className="ml-3">Personal Interests</span>
+</h2>
+
+          <div className="grid grid-cols-5 gap-8">
+            {/* Tech Icons */}
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain-wordmark.svg" alt="Tech Icon 1" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Tech Icon 2" />
+            {/* Music Icons */}
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="Spotify" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Guitar" />
+            {/* Sports Teams */}
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" />
+            <img src="/images/tesla-motors-1.svg" alt="Tesla" />
+            <img src="/images/philadelphia-eagles-2.svg" alt="Eagles" />
+            <img src="/images/los-angeles-lakers-1.svg" alt="Lakers" />
+            <img src="/images/washington-wizards-3.svg" alt="Wizards"/>
+            <img src="/images/spotify-2.svg" alt="Spotify"/>
+
+            <img src="/images/playstation-logo-colour.svg" alt="PS" />
+            <img src="/images/ethereum-eth.svg" alt="ETH" />
+
+            <img src="/images/thinkorswim.svg" alt="TOS" />
+            <img src="/images/chatgpt-4.svg" alt="GPT"/>
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+          
+          
+          </div>
+          <div>
+            <a className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-100 font-medium text-zinc-900 hover:bg-zinc-200 active:bg-zinc-200 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group mt-6 w-full" href="">
+              Contact Me
+            </a>
+          </div>
+        </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg text-justify">
-            I am a <span className="gradient-text text-transparent animate-gradient">Junior SWE</span> primarily working on full stack applications.
-            I enjoy building interactive and dynamic web applications. I have experience
-            working with frontend & backend technologies such as JavaScript, React, Node.js, Express, SQL,
-            HTML, CSS, and Git. I am a enthusiastic learner and I am always
-            looking to expand my knowledge and skill set. I am a huge basketball & football
-            fan as well. Fly eagles fly!
+            I&apos;m a <span className="gradient-text text-transparent animate-gradient">Junior Software Engineer</span> with a passion for crafting engaging and dynamic web applications. My expertise spans both frontend and backend technologies, including JavaScript, React, Node.js, Express, SQL, HTML, CSS, and Git. As an enthusiastic learner, I&apos;m diving into the realms of Machine Learning and Data Science to broaden my skill set.
+
+            Beyond coding, I&apos;m a devoted fan of basketball and football, particularly cheering for the Eagles. Fly Eagles Fly!
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

@@ -30,7 +30,7 @@ module.exports = {
         },
       },
       animation: {
-        gradient: "gradient 5s linear infinite",
+        gradient: "gradient 4s linear infinite",
       },
     }
   }
