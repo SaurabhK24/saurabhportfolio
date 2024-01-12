@@ -39,7 +39,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I am currently a Junior full stack software engineer. I enjoy building new things, working out, and watching movies.
+            Welcome to my personal website, I&apos;m glad your here! Feel free to check it out & contact me!
           </p>
           <div>
             <Link
