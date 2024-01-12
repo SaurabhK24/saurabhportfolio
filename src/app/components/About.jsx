@@ -23,7 +23,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>George Mason University, Fairfax VA</li>
+        <li>B.S in Computer Science</li>
       </ul>
     ),
   },
@@ -32,7 +32,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
+        <li>AWS Solutions Architect Associate</li>
         <li>Google Professional Cloud Developer</li>
       </ul>
     ),
@@ -55,14 +55,11 @@ const AboutSection = () => {
         <Image src="/images/about-image.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg text-justify">
-            I am a <span className="gradient-text text-transparent animate-gradient">Junior SWE</span> primarily working on full stack applications.
-            I enjoy building interactive and dynamic web applications. I have experience
-            working with frontend & backend technologies such as JavaScript, React, Node.js, Express, SQL,
-            HTML, CSS, and Git. I am a enthusiastic learner and I am always
-            looking to expand my knowledge and skill set. I am a huge basketball & football
-            fan as well. Fly eagles fly!
-          </p>
+          <p className="text-base lg:text-lg text-justify text-blueGray-800 font-light leading-relaxed mt-0 mb-4">
+  I'm a <span className="gradient-text text-transparent animate-gradient">Junior Software Engineer</span> with a passion for crafting engaging and dynamic web applications. My expertise spans both frontend and backend technologies, including JavaScript, React, Node.js, Express, SQL, HTML, CSS, and Git. As an enthusiastic learner, I'm diving into the realms of Machine Learning and Data Science to broaden my skill set.
+
+  Beyond coding, I'm a devoted fan of basketball and football, particularly cheering for the Eagles. Fly Eagles Fly!
+</p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
