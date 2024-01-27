@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-.alt-bg{
+.alt-bg {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -19,22 +17,8 @@
   opacity: 0;
 }
 
-.team-page-container{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 4;
-  margin-bottom: -20vh;
-}
 
-#team-page-title{
-  margin-bottom: 10px;
-}
-
-.alt-subtitle{
+.alt-subtitle {
   color: white;
   max-width: 40vw;
   font-size: 1vw;
@@ -51,62 +35,23 @@
 
 @keyframes fadeInUp-alt-subtitle {
   0% {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   100% {
-      opacity: 50%;
-      transform: translateY(0);
+    opacity: 50%;
+    transform: translateY(0);
   }
 }
-
 
 @keyframes fadeInUp {
   0% {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .team-members{
-      flex-direction: column;
-  }
-
-  .member-card-container{
-      padding: 40px 30px;
-  }
-
-  .member-card-container img{
-      width: 60vw;
-      height: 60vw;
-  }
-
-  .member-name{
-      font-size: 5vw;
-      margin-top: 35px;
-  }
-
-  .member-role{
-      font-size: 3vw;
-  }
-
-  .member-major{
-      font-size: 2.5vw;
-      margin-bottom: 50px;
-  }
-
-  .member-socials > a{
-      line-height: 0;
-      padding: 10px;
-      border-radius: 10px;
-      opacity: 1;
-      background-color: rgba(255, 255, 255, 0.091);
-      border: 1px solid rgba(255, 255, 255, 0.091);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -127,29 +72,15 @@
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
 }
-
 /* Add this to your styles or use a CSS-in-JS solution */
 .animate-gradient-bg {
   background-image: linear-gradient(90deg, #ff8a65, #ff4081, #f06292, #e031ab);

@@ -1,9 +1,10 @@
-import Image from 'next/image'
-import HeroSection from './components/HeroSection'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import AboutSection from './components/About'
-import Contact from './components/Contact'
+import Image from "next/image";
+import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import AboutSection from "./components/About";
+import Contact from "./components/Contact";
+import TimeLine from "./components/TimeLine";
 
 export default function Home() {
   return (
@@ -12,5 +13,5 @@ export default function Home() {
       <AboutSection></AboutSection>
       <Footer></Footer>
     </main>
-  )
+  );
 }
