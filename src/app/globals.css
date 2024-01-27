@@ -17,20 +17,6 @@
   opacity: 0;
 }
 
-.team-page-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 4;
-  margin-bottom: -20vh;
-}
-
-#team-page-title {
-  margin-bottom: 10px;
-}
 
 .alt-subtitle {
   color: white;
@@ -69,43 +55,6 @@
   }
 }
 
-@media screen and (max-width: 900px) {
-  .team-members {
-    flex-direction: column;
-  }
-
-  .member-card-container {
-    padding: 40px 30px;
-  }
-
-  .member-card-container img {
-    width: 60vw;
-    height: 60vw;
-  }
-
-  .member-name {
-    font-size: 5vw;
-    margin-top: 35px;
-  }
-
-  .member-role {
-    font-size: 3vw;
-  }
-
-  .member-major {
-    font-size: 2.5vw;
-    margin-bottom: 50px;
-  }
-
-  .member-socials > a {
-    line-height: 0;
-    padding: 10px;
-    border-radius: 10px;
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.091);
-    border: 1px solid rgba(255, 255, 255, 0.091);
-  }
-}
 
 .gradient-text {
   background: linear-gradient(
@@ -121,7 +70,6 @@
   background-size: 300%, 300%;
   background-clip: text;
 }
-
 
 :root {
   --foreground-rgb: 255, 255, 255;

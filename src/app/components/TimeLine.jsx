@@ -44,9 +44,9 @@ const Timeline = () => {
               <h3>Full-Stack Developer</h3>
               <time>Houston, TX - 2021 - present</time>
               <p>
-                I'm now a full-stack developer working as a freelancer. My stack
-                includes React, Next.js, TypeScript, Tailwind, Prisma and
-                MongoDB. I'm open to full-time opportunities.
+                I&apos;m now a full-stack developer working as a freelancer. My
+                stack includes React, Next.js, TypeScript, Tailwind, Prisma and
+                MongoDB. I&apos;m open to full-time opportunities.
               </p>
             </div>
           </li>
