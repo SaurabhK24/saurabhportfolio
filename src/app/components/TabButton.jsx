@@ -8,7 +8,9 @@ const variants = {
 
 const TabButton = ({ active, selectTab, children }) => {
   const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
-  const underlineColor = active ? "from-purple-500 to-pink-500" : "from-transparent to-transparent";
+  const underlineColor = active
+    ? "from-purple-500 to-pink-500"
+    : "from-transparent to-transparent";
 
   return (
     <button onClick={selectTab} className="relative">

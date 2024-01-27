@@ -4,10 +4,12 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import dotenv from "dotenv";
+
+dotenv.config();
+const cvLink = process.env.NEXT_PUBLIC_GOOGLE_DRIVE_RESUME;
 
 const HeroSection = () => {
-  const s3Url = "https://drive.google.com/file/d/1PGKTRyAl3Qg5XR6VaWOW33cByCI87pXh/view?usp=sharing";
-
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -39,7 +41,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Welcome to my personal website, I&apos;m glad your here! Feel free to check it out & contact me!
+            Welcome to my personal website, I&apos;m glad your here! Feel free
+            to check it out & contact me!
           </p>
           <div>
             <Link
@@ -49,9 +52,9 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href={s3Url}
+              href={cvLink}
               download="Saurav_CV.pdf"
-              target="_blank"  
+              target="_blank"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-sla te-800 rounded-full px-5 py-2 font-medium ">
