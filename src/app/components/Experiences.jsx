@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/solid";
 import { Transition } from "@headlessui/react";
 import { Disclosure } from "@headlessui/react";
+import Image from 'next/image';
 
 function Experiences() {
   return (
@@ -76,7 +77,7 @@ function ExperienceHeader({ logo, company, position, time }) {
     <div className="flex">
       <div>
         {logo && (
-          <img
+          <Image
             src={logo}
             alt={`${company} logo`}
             className="w-auto h-8 pr-2 mr-2 mt-2"

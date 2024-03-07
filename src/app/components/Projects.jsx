@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 const Projects = () => {
   return (
@@ -15,7 +16,7 @@ const Projects = () => {
         </div>
         
         <div className="lg:col-start-2 lg:row-start-1 lg:sticky top-4">
-          <img
+          <Image
             className="w-[24rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[28.5rem]"
             src="/images/example.png"
             alt="Project example"
@@ -49,7 +50,7 @@ const Projects = () => {
                   </h3>
                   <p>
                     Many problems ESLint finds can be automatically fixed.
-                    ESLint fixes are syntax-aware so you won't experience
+                    ESLint fixes are syntax-aware so you won&apos;t experience
                     errors introduced by traditional find-and-replace algorithms.
                   </p>
                   <a href="#" className="text-blue-500 hover:text-blue-700">
@@ -62,7 +63,7 @@ const Projects = () => {
                   </h3>
                   <p>
                     Preprocess code, use custom parsers, and write your own
-                    rules that work alongside ESLint's built-in rules. Customize
+                    rules that work alongside ESLint&apos;s built-in rules. Customize
                     ESLint to work exactly the way you need it for your project.
                   </p>
                   <a href="#" className="text-blue-500 hover:text-blue-700">

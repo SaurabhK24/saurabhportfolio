@@ -4,7 +4,7 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <div class="member-card-container" id="saurav">
-      <img src="/images/portheadshot.png" />
+      <Image src="/images/portheadshot.png" />
       <h1 class="member-name">Saurabh Khanal</h1>
       <p class="member-role">Nickname : 24k</p>
       <p class="member-major">Favorite Food: Momos!</p>
