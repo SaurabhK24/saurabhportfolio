@@ -51,7 +51,7 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 ">
         <div className="rounded-2xl border border-zinc-200 p-6 dark:border-zinc-700/40">
           <h2 className="flex items-center justify-center text-sm mb-5 font-semibold text-zinc-900 dark:text-zinc-100">
             <span className="gradient-text text-transparent animate-gradient ml-3">
@@ -175,7 +175,7 @@ const AboutSection = () => {
               className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-100 font-medium text-zinc-900 hover:bg-zinc-200 active:bg-zinc-200 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group mt-6 w-full"
               href="#"
             >
-              <span className="gradient-text text-transparent animate-gradient font-medium">
+              <span className="text-white font-medium">
                 Contact Me
               </span>
             </a>
