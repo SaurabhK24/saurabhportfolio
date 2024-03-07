@@ -17,7 +17,6 @@
   opacity: 0;
 }
 
-
 .alt-subtitle {
   color: white;
   max-width: 40vw;
@@ -54,7 +53,6 @@
     transform: translateY(0);
   }
 }
-
 
 .gradient-text {
   background: linear-gradient(
@@ -95,4 +93,25 @@ body {
   100% {
     background-position: 100% 50%;
   }
+}
+.content-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-xl-3xl) calc(1rem + 1vw);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.rounded-full {
+  position: relative;
+  overflow: hidden;
+}
+
+.rounded-full img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
