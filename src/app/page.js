@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import TimeLine from "./components/TimeLine";
 import Projects from "./components/Projects";
 import Experiences from "./components/Experiences";
+//import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
       <Experiences></Experiences>
       <HorizontalRule></HorizontalRule>
       <Footer></Footer>
+     
     </main>
   );
 }
