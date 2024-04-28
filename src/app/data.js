@@ -13,7 +13,7 @@ export const education = [
   export const experiences = [
     {
       company: "Paradyme - Contractor at C3 AI",
-      logo: "/images/ParadymeGradient.png",
+      logo: "/images/paradyme_logo.png",
       position: "Junior ML/AI Engineer",
       location: "Tysons, VA",
       time: "Incoming May 2024",
@@ -22,7 +22,7 @@ export const education = [
     },
     {
       company: "Sparksoft",
-      logo: "/images/paradyme_logo.png",
+      logo: "/images/sparksoft.png",
       position: "Junior Software Engineer",
       location: "Columbia, MD",
       time: "June 2023 – May 2024",
