@@ -25,7 +25,7 @@ export const education = [
       logo: "/images/sparksoft.png",
       position: "Junior Software Engineer",
       location: "Columbia, MD",
-      time: "June 2023 – Present",
+      time: "June 2023 – May 2024",
       description: [
         "Spearheaded transition from manual database process to an automated GitHub-integrated pipeline which cut resolution time for database backup-related tickets by 50% and yielding accelerated delivery on EPS team.",
         "Implemented and managed a robust deployment pipeline for front-end and back-end microservices (File Manager), resulting in a 50% decrease in deployment time.",
