@@ -12,17 +12,13 @@ export const education = [
   
   export const experiences = [
     {
-      company: "Paradyme",
+      company: "Paradyme - Contractor at C3 AI",
       logo: "/images/ParadymeGradient.png",
       position: "Junior ML/AI Engineer",
       location: "Tysons, VA",
       time: "Incoming May 2024",
-      description: [
-        ""
-      ],
-      skills: [
-        
-      ],
+      description: [],
+      skills: [],
     },
     {
       company: "Sparksoft",
