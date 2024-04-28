@@ -9,7 +9,7 @@ const Contact = () => {
       <p class="member-role">Nickname : 24k</p>
       <p class="member-major">Favorite Food: Momos!</p>
       <div class="member-socials">
-        <a target="_blank" href="https://www.instagram.com/nimay01/">
+        <a target="_blank" href="https://www.instagram.com/24ksaurav/">
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -34,7 +34,7 @@ const Contact = () => {
             xmlns="http://www.w3.org/2000/svg"
           />
         </a>
-        <a target="_blank" href="https://github.com/NimayVyas">
+        <a target="_blank" href="https://github.com/">
           <svg
             stroke="currentColor"
             fill="currentColor"
