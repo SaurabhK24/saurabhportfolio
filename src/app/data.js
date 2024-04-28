@@ -22,7 +22,7 @@ export const education = [
     },
     {
       company: "Sparksoft",
-      logo: "/images/sparksoft.png",
+      logo: "/images/paradyme_logo.png",
       position: "Junior Software Engineer",
       location: "Columbia, MD",
       time: "June 2023 – May 2024",
