@@ -14,6 +14,25 @@ export const education = [
     {
       company: "Sparksoft",
       logo: "/images/sparksoft.png",
+      position: "Software Engineer",
+      location: "Columbia, MD",
+      time: "May 2024 – Current",
+      description: ["Just started! :)"],
+      skills: [
+        "Angular",
+        "Javascript",
+        "Node.js",
+        "Jenkins",
+        "AWS",
+        "DynamoDB",
+        "CI/CD",
+        "Nginx",
+        "Splunk"
+      ],
+    },
+    {
+      company: "Sparksoft",
+      logo: "/images/sparksoft.png",
       position: "Junior Software Engineer",
       location: "Columbia, MD",
       time: "June 2023 – May 2024",
@@ -46,7 +65,7 @@ export const education = [
         "Built serverless APIs using AWS Lambda with 99% uptime and real-time DynamoDB data entry tables",
         "Improved resume parsing web application API response time’s by 20% by reducing redundant database queries and caching reused data"
       ],
-      skills: ["Python", "AWS", "Tableau", "Excel"],
+      skills: ["Python", "AWS", "React", "APIs"],
     },
     {
       company: "GeorgeTown University",
